@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WELKOM v0.1</title>
+  </head>
+<body>
+
+<h1>Welkom op Blogspul ! </h1><br>
+<!--bezoekers gaan naar bloglees_formB.php, hier kan men alleen lezen-->
+<h2>Bezoekers kunnen<a href="bloglees_formB.php"> hier </a>klikken</h2><br>
+<h2>Geregistreerde gebruikers kunnen op deze pagina inloggen met naam en wachtwoord</h2><br>
+
+<form id="inlog" name="inlog" action="inloggen.php" method="post">
+  <!--hidden input om het "inlog-script" aan te zetten-->
+        <input type = "hidden"  id="bekend" name="bekend" value="bekend">
+  Naam:<br>
+        <input type="text" name="naam"><br><br>
+  Wachtwoord:<br>
+        <input type="password" name="wachtw"><br><br>
+        <input type = "button" onclick = "submit()" value = "LOGIN"><br><br>
+</form>
+
+<h3>Maak hier een nieuw account aan.</h3><br>
+<form id="registr" name="registr" action="inloggen.php" method="post">
+      <!--hidden input om het "registratie-script" aan te zetten-->
+      <input type = "hidden"  id="nieuw" name="nieuw" value="nieuw">
+      Naam:<br>
+      <input type="text" name="naamb"><br><br>
+      Wachtwoord:<br>
+      <input type="password" name="wachtwb"><br><br>
+      Nogmaals wachtwoord:<br>
+      <input type="password" name="wachtwbc"><br><br>
+
+<input type = "button" onclick = "submit()" value = "Nieuw Account"><br><br>
+</form>
+
+
+
+
+
+
+
+</body>
+
+</html>
